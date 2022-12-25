@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Enter a Number: <input type="text" name="text" id="yourNo"></p>
+<p><button onclick="timeConvert()">click Me!</button></p>
+<p id="result"></p>
+  
+<script type = "text/javascript">
+
+  function timeConvert() {
+    let Z = document.getElementById('yourNo').value;
+
+    var minutes = Math.floor(Z * 60);
+    var seconds = Z % 60;
+
+    document.getElementById("result").innerHTML = 
+    minutes + "<br>" + seconds;
+  }
+
+
+
+      </script>
+
+</body>
+</html>
